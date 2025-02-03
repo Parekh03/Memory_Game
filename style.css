@@ -1,0 +1,63 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Score Styling */
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Container to center everything */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+/* Grid Styling */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 85px);
+    grid-template-rows: repeat(6, 85px);
+    gap: 6px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Grid Elements (Cards) */
+.grid-element {
+    height: 85px;
+    width: 85px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.grid-element:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Winning Message Styling */
+#result {
+    font-weight: bold;
+    font-size: 22px;
+    color: #fff;
+    margin-left: 10px;
+}
