@@ -86,7 +86,7 @@ function checkScore() {
             imgs[id].removeEventListener("click", flipCard);
             cardsMatched.push(id);
         }
-       }, 350);
+       }, 450);
         score++;
     } else {
         // Not matched, flip back after delay
@@ -94,14 +94,14 @@ function checkScore() {
             for (let id of ids) {
                 imgs[id].src = "./images/blank.png";
             }
-        }, 350);
+        }, 450);
     }
 
     // Reset selections after checking the score
     setTimeout(() => {
         ids = [];
         cardsChosen = [];
-    }, 350);
+    }, 450);
 
     result.innerText = `Score: ${score}`
 
@@ -110,7 +110,7 @@ function checkScore() {
         setTimeout(() => {
             alert("Congratulations! You won!");
             location.reload(); // Refresh the page after user clicks "OK"
-        }, 350);
+        }, 450);
     }
 }
 
